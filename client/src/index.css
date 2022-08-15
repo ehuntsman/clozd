@@ -7,3 +7,42 @@ body {
 #root {
 	height: 100%;
 }
+
+.button {
+	background-color: #25262b;
+	border: 1px solid #25262b;
+	height: 48px;
+	line-height: 16px;
+	border-radius: 4px;
+	color: #fff;
+	padding: 0 20px;
+	transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #25262b;
+}
+
+.small-button {
+	font-size: 12px;
+	height: 30px;
+	display: inline;
+}
+
+.button-outline {
+	background-color: #fff;
+	border: 1px solid #25262b;
+	height: 48px;
+	line-height: 16px;
+	border-radius: 4px;
+	color: #25262b;
+	padding: 0 20px;
+	transition: all 0.2s ease-in-out;
+}
+
+.button-outline:hover {
+	background-color: #25262b;
+	color: #fff;
+	border: 1px solid #fff;
+}

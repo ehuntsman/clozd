@@ -1,0 +1,133 @@
+.company {
+	height: calc(100vh - 315px);
+	overflow: auto;
+}
+
+.company-container h1 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.company-container .button {
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(111,111,111,0.5);
+    z-index: 9;
+    backdrop-filter: blur(25px) saturate(1.1) brightness(1.1);
+}
+
+.company_header {
+	display: flex;
+	flex-direction: row;
+	padding: 8px 16px;
+	font-size: 14px;
+	background-color: #eee;
+	color: #25262b;
+}
+
+.department_header {
+    display: flex;
+	flex-direction: row;
+	padding: 8px 16px;
+	font-size: 14px;
+	background-color: #25262b;
+	color: #fff;
+	position: sticky;
+	top: 0;
+    border-radius: 4px 4px 0 0;
+    z-index: 5;
+}
+
+.company_row {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid rgba(37,38,43, 0.3);
+	border-bottom: 1px solid rgba(37,38,43, 0.3);
+	font-size: 14px;
+    line-height: 49px;
+    position: sticky;
+}
+
+.company_row:hover {
+	background-color: #FAFAFA;
+
+}
+
+.company_row ~ .company_row {
+	border-top: none;
+}
+
+.company_row-cell {
+	flex: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+.company_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    border-radius: 0 0 4px 4px;
+    margin: 20px 0;
+}
+
+.department {
+    margin-bottom: 10px;
+}
+
+.company_row img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.employee_information {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.modal {
+    background: #25262b;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 10;
+    width: 400px;
+    padding: 20px 0 60px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #32AEDA;
+    transform: translate(-50%, -20%);
+}
+
+.modal input {
+    display: block;
+    margin: 10px auto;
+}
+
+.close {
+    font-size: 16px;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.close:hover {
+    color: #32AEDA;
+}

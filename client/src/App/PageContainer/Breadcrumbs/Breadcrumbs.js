@@ -15,10 +15,21 @@ const Breadcrumbs = () => {
 				destination: '/companies',
 			});
 			break;
+		case '/companies/' + location.pathname.split('/')[2]:
+			console.log("adds company crumb");
+			crumbs.push({
+				name: 'Companies',
+				destination: '/',
+			},{
+				name: 'Company',
+				destination: '#',
+			});
+			break;
 		default:
 			break;
 	}
 
+	console.log(crumbs, "breadcrumbs", location.pathname);
 	return (
 		<div className="breadcrumbs">
 			<div className="breadcrumbs_crumb">/</div>
